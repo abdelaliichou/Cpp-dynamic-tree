@@ -1,0 +1,31 @@
+Question 1 : 
+L'expression abc+∗ est évaluée comme a×(b+c) en utilisant une pile. Le processus utilise une pile pour gérer les opérandes et applique les opérateurs au fur et à mesure qu'ils sont rencontrés, en retirant les éléments nécessaires de la pile, en effectuant l'opération, et en remplaçant le résultat sur la pile.
+
+1 - Lire 'a' :
+'a' est un opérande.
+On le place sur la pile.
+État de la pile : [a] 
+
+2 - Lire 'b' :
+'b' est un opérande.
+On le place sur la pile.
+État de la pile : [a,b] 
+
+3 - Lire 'c' :
+'c' est un opérande.
+On le place sur la pile.
+État de la pile : [a,b,c]
+
+4 - Lire '  +' :
+'+' est un opérateur.
+On retire les deux derniers opérandes de la pile, c'est-à-dire 'b' et 'c'.
+On effectue l'opération b+c.
+On place le résultat de b+c sur la pile.
+État de la pile : [a,(b+c)]
+
+5 - Lire '*' :
+'*' est un opérateur.
+On retire les deux derniers opérandes de la pile, c'est-à-dire 'a' et b+c.
+On effectue l'opération a×(b+c).
+On place le résultat de a×(b+c) sur la pile.
+État de la pile : [a×(b+c)]
